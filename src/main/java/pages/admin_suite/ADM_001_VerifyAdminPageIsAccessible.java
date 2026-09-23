@@ -1,4 +1,4 @@
-package pages;
+package pages.admin_suite;
 
 import org.testng.Assert;
 
@@ -7,12 +7,12 @@ import com.microsoft.playwright.Page;
 
 import utils.LocatorReader;
 
-public class AdminPage {
+public class ADM_001_VerifyAdminPageIsAccessible {
 
     private final Page page;
 
     // Constructor
-    public AdminPage(Page page) {
+    public ADM_001_VerifyAdminPageIsAccessible(Page page) {
         this.page = page;
     }
 

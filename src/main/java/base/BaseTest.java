@@ -44,7 +44,7 @@ public class BaseTest {
     public void tearDown() {
 
         if (page != null) {
-            page.waitForTimeout(10000);
+            page.waitForTimeout(60000);
         }
 
         if (page != null) {
