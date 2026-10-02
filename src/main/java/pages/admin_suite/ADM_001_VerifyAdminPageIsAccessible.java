@@ -17,6 +17,19 @@ public class ADM_001_VerifyAdminPageIsAccessible {
     }
 
     // Locator Methods
+    public Locator UsernameField() {
+        return page.locator(LocatorReader.getLocator("loginPage.username"));
+        
+    }
+
+    public Locator PasswordField() {
+        return page.locator(LocatorReader.getLocator("loginPage.password"));
+    }
+
+    public Locator LoginButton() {
+        return page.locator(LocatorReader.getLocator("loginPage.loginButton"));
+    }
+
     public Locator adminTab() {
         return page.locator(LocatorReader.getLocator("adminPage.adminTab"));
     }
@@ -26,6 +39,18 @@ public class ADM_001_VerifyAdminPageIsAccessible {
     }
 
     // Action Methods
+    // Action Methods
+    public void enterUsername(String username) {
+        UsernameField().fill(username);
+    }
+
+    public void enterPassword(String password) {
+        PasswordField().fill(password);
+    }
+
+    public void clickLoginButton() {
+        LoginButton().click();
+    }
     public void clickAdminTab() {
         adminTab().click();
     }

@@ -1,4 +1,9 @@
-C:\Users\USER\Automation_Project\qa_automation_framework\src\main\java\base\BaseTest.java
-C:\Users\USER\Automation_Project\qa_automation_framework\src\main\java\base\BrowserFactory.java
-C:\Users\USER\Automation_Project\qa_automation_framework\src\main\java\utils\ConfigReader.java
-C:\Users\USER\Automation_Project\qa_automation_framework\src\main\java\utils\LocatorReader.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\base\BaseTest.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\base\BrowserFactory.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\pages\admin_suite\ADM_001_VerifyAdminPageIsAccessible.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\pages\admin_suite\ADM_002_VerifyUserManagementPageLoads.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\pages\admin_suite\ADM_003_AddUserWithValidInformation.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\pages\authentication_suite\LoginPage.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\utils\ConfigReader.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\utils\ExcelReader.java
+C:\Users\User\QA-Automation-Projects\Plawright_Automation_Framework\qa_automation_framework\src\main\java\utils\LocatorReader.java

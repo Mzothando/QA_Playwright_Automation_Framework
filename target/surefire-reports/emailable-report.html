@@ -9,9 +9,118 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Automation Test Suite</th></tr>
-<tr><td><a href="#t0">Regression Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Regression Tests</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">44 633</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.Admin_Suite_TestRunner</td><td><a href="#m0">setUp</a></td><td rowspan="1">1790921596400</td><td rowspan="1">30869</td></tr><tr><th colspan="4">Regression Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">tests.Admin_Suite_TestRunner</td><td><a href="#m1">setUp</a></td><td rowspan="1">1790921627340</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">tearDown</a></td><td rowspan="2">1790921627279</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td></tr><tr><th colspan="4">Regression Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">tests.Admin_Suite_TestRunner</td><td><a href="#m4">ADM_002_verifyUserManagementPageLoads</a></td><td rowspan="1">1790921627277</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m5">ADM_003_AddUserWithValidInformation</a></td><td rowspan="1">1790921627340</td><td rowspan="1">0</td></tr><tr><th colspan="4">Regression Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.Admin_Suite_TestRunner</td><td><a href="#m6">ADM_001_VerifyAdminPageIsAccessible</a></td><td rowspan="1">1790921592134</td><td rowspan="1">3923</td></tr></tbody>
 </table>
-<h2>Regression Tests</h2></body>
+<h2>Regression Tests</h2><h3 id="m0">tests.Admin_Suite_TestRunner#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - navigating to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:429)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:959)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:44)
+	at com.microsoft.playwright.Page.navigate(Page.java:5709)
+	at base.BaseTest.setUp(BaseTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - navigating to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 43 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.Admin_Suite_TestRunner#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.Admin_Suite_TestRunner#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.Admin_Suite_TestRunner#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.Admin_Suite_TestRunner#ADM_002_verifyUserManagementPageLoads</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - navigating to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:429)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:959)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:44)
+	at com.microsoft.playwright.Page.navigate(Page.java:5709)
+	at base.BaseTest.setUp(BaseTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - navigating to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 43 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.Admin_Suite_TestRunner#ADM_003_AddUserWithValidInformation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td><td>Admin</td><td>Pe</td><td>Enabled</td><td>automation@123</td><td>abc@123</td><td>abc@123</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - navigating to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:429)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:959)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:44)
+	at com.microsoft.playwright.Page.navigate(Page.java:5709)
+	at base.BaseTest.setUp(BaseTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\User\AppData\Local\Temp\playwright-java-1284918191376403767\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - navigating to &quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;, waiting until &quot;load&quot;
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 43 more
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.Admin_Suite_TestRunner#ADM_001_VerifyAdminPageIsAccessible</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>

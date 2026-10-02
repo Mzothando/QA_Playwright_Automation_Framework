@@ -15,6 +15,16 @@ public class ADM_002_VerifyUserManagementPageLoads {
     }
 
     //Element Locator Methods
+    public Locator UsernameField() {
+        return page.locator(LocatorReader.getLocator("loginPage.username"));
+        
+    }
+    public Locator PasswordField() {
+        return page.locator(LocatorReader.getLocator("loginPage.password"));
+    }
+    public Locator LoginButton() {
+        return page.locator(LocatorReader.getLocator("loginPage.loginButton"));
+    } 
     private Locator adminTab() {
         return page.locator(LocatorReader.getLocator("adminPage.adminTab"));
     }
@@ -55,6 +65,18 @@ public class ADM_002_VerifyUserManagementPageLoads {
    
 
     // Action Methods
+    public void enterUsername(String username) {
+        UsernameField().fill(username);
+    }
+
+    public void enterPassword(String password) {
+        PasswordField().fill(password);
+    }
+
+    public void clickLoginButton() {
+        LoginButton().click();
+    }
+
     public void clickAdminTab() {
         adminTab().click();
     }

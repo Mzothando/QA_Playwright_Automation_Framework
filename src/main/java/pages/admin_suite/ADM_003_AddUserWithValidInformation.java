@@ -16,6 +16,18 @@ public class ADM_003_AddUserWithValidInformation {
     }
 
     // Elements Locator Methods
+    public Locator UsernameField() {
+        return page.locator(LocatorReader.getLocator("loginPage.username"));
+        
+    }
+
+    public Locator PasswordField() {
+        return page.locator(LocatorReader.getLocator("loginPage.password"));
+    }
+
+    public Locator LoginButton() {
+        return page.locator(LocatorReader.getLocator("loginPage.loginButton"));
+    }
     private Locator adminTab() {
         return page.locator(LocatorReader.getLocator("adminPage.adminTab"));
     }
@@ -56,6 +68,17 @@ public class ADM_003_AddUserWithValidInformation {
 
 
     // Action Methods
+    public void enterUsername(String username) {
+        UsernameField().fill(username);
+    }
+
+    public void enterPassword(String password) {
+        PasswordField().fill(password);
+    }
+
+    public void clickLoginButton() {
+        LoginButton().click();
+    }
     public void clickAdminTab() {
         adminTab().click();
     }
@@ -75,8 +98,35 @@ public class ADM_003_AddUserWithValidInformation {
     public void clickUserRoleDropdown() {
         userRoleDropdown().click();
     }
-    public void clickUserRoleOption() {
-        userRoleOption().selectOption(new SelectOption().setIndex(0));
+    public void clickUserRoleOption(String option) {
+        userRoleOption().selectOption(new SelectOption().setLabel(option));
+    }
+    public void enterEmployeeName(String employeeName) {
+        employeeNameInput().fill(employeeName);
+    }
+
+    public void clickStatusDropdown() {
+        statusDropdown().click();
+    }
+
+    public void clickStatusOption(String option) {
+        statusDropdown().selectOption(new SelectOption().setLabel(option));
+    }
+
+    public void enterNewUsername(String newUsername) {
+        usernameInput().fill(newUsername);
+    }
+
+    public void enterUserPassword(String userPassword) {
+        passwordInput().fill(userPassword);
+    }
+
+    public void enterConfirmPassword(String confirmPassword) {
+        confirmPasswordInput().fill(confirmPassword);
+    }
+
+    public void clickSaveButton() {
+        saveButton().click();
     }
 
     
