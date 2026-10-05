@@ -1,0 +1,9 @@
+utils\ExcelReader.class
+utils\ConfigReader.class
+utils\LocatorReader.class
+base\BaseTest.class
+base\BrowserFactory.class
+pages\admin_suite\ADM_001_VerifyAdminPageIsAccessible.class
+pages\authentication_suite\LoginPage.class
+pages\admin_suite\ADM_003_AddUserWithValidInformation.class
+pages\admin_suite\ADM_002_VerifyUserManagementPageLoads.class

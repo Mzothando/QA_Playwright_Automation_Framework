@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="41.99" tests="3" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="surefire.suiteXmlFiles" value="src/main/resources/testng_xml_files/testng.xml"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\target\test-classes;C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\target\classes;C:\Users\User\.m2\repository\com\microsoft\playwright\playwright\1.62.0\playwright-1.62.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.14.0\gson-2.14.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.48.0\error_prone_annotations-2.48.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver\1.62.0\driver-1.62.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver-bundle\1.62.0\driver-bundle-1.62.0.jar;C:\Users\User\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\User\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\User\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\User\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\User\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-java-commons\3.0.0\allure-java-commons-3.0.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-model\3.0.0\allure-model-3.0.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-testng\3.0.0\allure-testng-3.0.0.jar;C:\Users\User\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\User\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\User\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\User\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\User\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Africa/Johannesburg"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ZA"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire2191766107816499062\surefirebooter-20261005175940283_3.jar C:\Users\User\AppData\Local\Temp\surefire2191766107816499062 2026-10-05T17-59-40_072-jvmRun1 surefire-20261005175940283_1tmp surefire_0-20261005175940283_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\target\test-classes;C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\target\classes;C:\Users\User\.m2\repository\com\microsoft\playwright\playwright\1.62.0\playwright-1.62.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.14.0\gson-2.14.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.48.0\error_prone_annotations-2.48.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver\1.62.0\driver-1.62.0.jar;C:\Users\User\.m2\repository\com\microsoft\playwright\driver-bundle\1.62.0\driver-bundle-1.62.0.jar;C:\Users\User\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\User\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\User\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\User\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\User\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-java-commons\3.0.0\allure-java-commons-3.0.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-model\3.0.0\allure-model-3.0.0.jar;C:\Users\User\.m2\repository\io\qameta\allure\allure-testng\3.0.0\allure-testng-3.0.0.jar;C:\Users\User\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\User\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\User\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\User\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\User\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\target/allure-report/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire2191766107816499062\surefirebooter-20261005175940283_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.20.1+1"/>
+    <property name="user.name" value="User"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.20.1+1"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.20.1"/>
+    <property name="user.dir" value="C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\User\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\User\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\User\scoop\shims;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Android\Sdk\platform-tools;c:\Users\User\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.20.1+1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="ADM_001_VerifyAdminPageIsAccessible[Admin, admin123](1)" classname="tests.Admin_Suite_TestRunner" time="3.254">
+    <system-out><![CDATA[2026-10-05T15:59:41.573221800Z main ERROR Log4j API could not find a logging provider.
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="ADM_002_verifyUserManagementPageLoads[Admin, admin123](1)" classname="tests.Admin_Suite_TestRunner" time="4.462"/>
+  <testcase name="ADM_003_AddUserWithValidInformation[Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123](1)" classname="tests.Admin_Suite_TestRunner" time="5.393">
+    <failure message="Error {&#10;  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:&#10;    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))&#10;    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))&#10;    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))&#10;&#10;  name=&apos;Error&#10;  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:&#10;    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))&#10;    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))&#10;    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))&#10;&#10;    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)&#10;    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)&#10;    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)&#10;    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)&#10;    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28&#10;    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)&#10;    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)&#10;    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)&#10;    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)&#10;    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)&#10;}&#10;Call log:&#10;-   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)&#10;" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Error: strict mode violation: locator("//div[@role='listbox']//div[@role='option']") resolved to 3 elements:
+    1) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">-- Select --</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("-- Select --"))
+    2) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Admin"))
+    3) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("ESS"))
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//div[@role='listbox']//div[@role='option']") resolved to 3 elements:
+    1) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">-- Select --</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("-- Select --"))
+    2) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Admin"))
+    3) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("ESS"))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
+    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
+    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
+    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
+    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
+    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
+}
+Call log:
+-   - waiting for locator("//div[@role='listbox']//div[@role='option']")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:691)
+	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:658)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:646)
+	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:126)
+	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:563)
+	at com.microsoft.playwright.Locator.selectOption(Locator.java:5114)
+	at pages.admin_suite.ADM_003_AddUserWithValidInformation.clickUserRoleOption(ADM_003_AddUserWithValidInformation.java:102)
+	at tests.Admin_Suite_TestRunner.ADM_003_AddUserWithValidInformation(Admin_Suite_TestRunner.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("//div[@role='listbox']//div[@role='option']") resolved to 3 elements:
+    1) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">-- Select --</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("-- Select --"))
+    2) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Admin"))
+    3) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("ESS"))
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//div[@role='listbox']//div[@role='option']") resolved to 3 elements:
+    1) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">-- Select --</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("-- Select --"))
+    2) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("Admin"))
+    3) <div role="option" data-v-d130bb63="" data-v-13cf171c="" class="oxd-select-option">…</div> aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("ESS"))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
+    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
+    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
+    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
+    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
+    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
+    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
+    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
+    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
+}
+Call log:
+-   - waiting for locator("//div[@role='listbox']//div[@role='option']")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 42 more
+]]></failure>
+  </testcase>
+</testsuite>

@@ -103,10 +103,29 @@
 
                 <configuration>
 
-                    <!-- TestNG XML -->
+                    <!-- TestNG XML files -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+
+                        <suiteXmlFile>
+                            <!-- ${project.basedir}/src/main/resources/testng_xml_files/${suiteXmlFile} -->
+                             ${surefire.suiteXmlFiles}
+                        </suiteXmlFile>
+
                     </suiteXmlFiles>
+
+                    <!-- ================================= -->
+                    <!-- SYSTEM PROPERTIES -->
+                    <!-- ================================= -->
+
+                    <systemPropertyVariables>
+
+                        <!-- Allure Results Directory -->
+                        <allure.results.directory>
+                            ${project.build.directory}/allure-report/allure-results
+                        </allure.results.directory>
+
+
+                    </systemPropertyVariables>
 
                 </configuration>
             </plugin>
