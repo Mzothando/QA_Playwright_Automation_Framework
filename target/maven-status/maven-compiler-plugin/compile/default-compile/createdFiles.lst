@@ -1,5 +1,8 @@
 utils\ExcelReader.class
 utils\ConfigReader.class
+utils\ExtentReportsManager.class
+utils\TestNGListener.class
+utils\HybridStepLogger.class
 utils\LocatorReader.class
 base\BaseTest.class
 base\BrowserFactory.class

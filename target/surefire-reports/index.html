@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="navigator-link">
-              <span class="suite-name border-failed">OrangeHRM Admin Suite</span>
+              <span class="suite-name border-skipped">OrangeHRM Admin Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-OrangeHRM_Admin_Suite" class="navigator-link ">
-                    <span>C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\src\main\resources\testng_xml_files\testng.xml</span>
+                    <span>C:\AutomationTrainings\Plawright_Automation_Framework\QA_Playwright_Automation_Framework\src\main\resources\testng_xml_files\admin_suite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,40 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="hide-methods failed suite-OrangeHRM_Admin_Suite"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM_Admin_Suite -->
-                      <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="show-methods failed suite-OrangeHRM_Admin_Suite"> (show)</a> <!-- show-methods failed suite-OrangeHRM_Admin_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="hide-methods skipped suite-OrangeHRM_Admin_Suite"> (hide)</a> <!-- hide-methods skipped suite-OrangeHRM_Admin_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="show-methods skipped suite-OrangeHRM_Admin_Suite"> (show)</a> <!-- show-methods skipped suite-OrangeHRM_Admin_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-OrangeHRM_Admin_Suite">
+                    <div class="method-list-content skipped suite-OrangeHRM_Admin_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" title="tests.Admin_Suite_TestRunner" class="method navigator-link" hash-for-method="ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)">ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-OrangeHRM_Admin_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="hide-methods passed suite-OrangeHRM_Admin_Suite"> (hide)</a> <!-- hide-methods passed suite-OrangeHRM_Admin_Suite -->
-                      <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" class="show-methods passed suite-OrangeHRM_Admin_Suite"> (show)</a> <!-- show-methods passed suite-OrangeHRM_Admin_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-OrangeHRM_Admin_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" title="tests.Admin_Suite_TestRunner" class="method navigator-link" hash-for-method="ADM_001_VerifyAdminPageIsAccessible(Admin, admin123)">ADM_001_VerifyAdminPageIsAccessible(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" title="tests.Admin_Suite_TestRunner" class="method navigator-link" hash-for-method="ADM_002_verifyUserManagementPageLoads(Admin, admin123)">ADM_002_verifyUserManagementPageLoads(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-OrangeHRM_Admin_Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Admin_Suite" title="tests.Admin_Suite_TestRunner" class="method navigator-link" hash-for-method="ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)">ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-OrangeHRM_Admin_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,98 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM_Admin_Suite" class="panel OrangeHRM_Admin_Suite">
-          <div class="suite-OrangeHRM_Admin_Suite-class-failed">
+          <div class="suite-OrangeHRM_Admin_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.Admin_Suite_TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)">
-                  </a> <!-- ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123) -->
-                  <span class="method-name">ADM_003_AddUserWithValidInformation</span>
-                  <span class="parameters">(Admin,admin123,Admin,Pe,Enabled,automation@123,abc@123,abc@123)</span>
-                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
-    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
-    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
-    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
-    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
-    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
-    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
-    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
-    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
-    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
-}
-Call log:
--   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:691)
-	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:658)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:646)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:126)
-	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:563)
-	at com.microsoft.playwright.Locator.selectOption(Locator.java:5114)
-	at pages.admin_suite.ADM_003_AddUserWithValidInformation.clickUserRoleOption(ADM_003_AddUserWithValidInformation.java:102)
-	at tests.Admin_Suite_TestRunner.ADM_003_AddUserWithValidInformation(Admin_Suite_TestRunner.java:173)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
-    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
-    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
-    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
-    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
-    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
-    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
-    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
-    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
-    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
-}
-Call log:
--   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
-	... 42 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(ADM-003 — Add user with valid information)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Admin_Suite-class-failed -->
-          <div class="suite-OrangeHRM_Admin_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">tests.Admin_Suite_TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -238,6 +140,12 @@ Call log:
                   </a> <!-- ADM_001_VerifyAdminPageIsAccessible(Admin, admin123) -->
                   <span class="method-name">ADM_001_VerifyAdminPageIsAccessible</span>
                   <span class="parameters">(Admin,admin123)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (ADM-001 — Verify Admin page is accessible)                  </em>
                 </div> <!-- method-content -->
@@ -248,16 +156,38 @@ Call log:
                   </a> <!-- ADM_002_verifyUserManagementPageLoads(Admin, admin123) -->
                   <span class="method-name">ADM_002_verifyUserManagementPageLoads</span>
                   <span class="parameters">(Admin,admin123)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (ADM-002 — Verify User Management page loads)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)">
+                  </a> <!-- ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123) -->
+                  <span class="method-name">ADM_003_AddUserWithValidInformation</span>
+                  <span class="parameters">(Admin,admin123,Admin,Pe,Enabled,automation@123,abc@123,abc@123)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(ADM-003 — Add user with valid information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Admin_Suite-class-passed -->
+          </div> <!-- suite-OrangeHRM_Admin_Suite-class-skipped -->
         </div> <!-- panel OrangeHRM_Admin_Suite -->
         <div panel-name="test-xml-OrangeHRM_Admin_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\QA-Automation-Projects\Plawright_Automation_Project\QA_Playwright_Automation_Framework\src\main\resources\testng_xml_files\testng.xml</span>
+            <span class="header-content">C:\AutomationTrainings\Plawright_Automation_Framework\QA_Playwright_Automation_Framework\src\main\resources\testng_xml_files\admin_suite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -310,20 +240,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ADM_003_AddUserWithValidInformation')
 data.setCell(0, 2, 'tests.Admin_Suite_TestRunner')
-data.setCell(0, 3, 5388);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'ADM_002_verifyUserManagementPageLoads')
 data.setCell(1, 2, 'tests.Admin_Suite_TestRunner')
-data.setCell(1, 3, 4475);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ADM_001_VerifyAdminPageIsAccessible')
 data.setCell(2, 2, 'tests.Admin_Suite_TestRunner')
-data.setCell(2, 3, 3413);
+data.setCell(2, 3, 0);
 window.suiteTableData['OrangeHRM_Admin_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Admin_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-OrangeHRM_Admin_Suite">
               </div> <!-- times-div-OrangeHRM_Admin_Suite -->
             </div> <!-- times-div -->
@@ -351,42 +281,42 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Admin_Suite_TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ADM_001_VerifyAdminPageIsAccessible(Admin, admin123)</span>
-                <span class="method-start">10859 ms</span>
+                <span class="method-start">6368 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14292 ms</span>
+                <span class="method-start">6530 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14960 ms</span>
+                <span class="method-start">6603 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ADM_002_verifyUserManagementPageLoads(Admin, admin123)</span>
-                <span class="method-start">22205 ms</span>
+                <span class="method-start">6605 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26687 ms</span>
+                <span class="method-start">6632 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">27388 ms</span>
+                <span class="method-start">6778 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ADM_003_AddUserWithValidInformation(Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123)</span>
-                <span class="method-start">33960 ms</span>
+                <span class="method-start">6780 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39380 ms</span>
+                <span class="method-start">6805 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

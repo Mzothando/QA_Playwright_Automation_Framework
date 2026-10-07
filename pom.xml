@@ -52,14 +52,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Allure Java Commons -->
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-java-commons</artifactId>
-            <version>3.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-
         <!-- Allure TestNG -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
