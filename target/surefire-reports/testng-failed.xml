@@ -7,7 +7,9 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="ADM_003_AddUserWithValidInformation" invocation-numbers="0"/>
+          <include name="ADM_001_VerifyAdminPageIsAccessible"/>
+          <include name="ADM_003_AddUserWithValidInformation"/>
+          <include name="ADM_002_verifyUserManagementPageLoads"/>
         </methods>
       </class> <!-- tests.Admin_Suite_TestRunner -->
     </classes>

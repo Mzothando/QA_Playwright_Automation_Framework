@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -9,8 +10,9 @@ import pages.admin_suite.ADM_002_VerifyUserManagementPageLoads;
 import pages.admin_suite.ADM_003_AddUserWithValidInformation;
 import utils.ConfigReader;
 import utils.ExcelReader;
+import utils.HybridStepLogger;
 
-
+@Listeners({utils.TestNGListener.class})
 public class Admin_Suite_TestRunner extends BaseTest {
 
     // ================ DATA PROVIDERS ================
@@ -120,11 +122,24 @@ public class Admin_Suite_TestRunner extends BaseTest {
     public void ADM_001_VerifyAdminPageIsAccessible(String username, String password) throws Exception {
 
         ADM_001_VerifyAdminPageIsAccessible adminPageTest = new ADM_001_VerifyAdminPageIsAccessible(page);
+        
         adminPageTest.enterUsername(username);
         adminPageTest.enterPassword(password);
-        adminPageTest.clickLoginButton();   
+
+        HybridStepLogger.logStepWithScreenshot(
+                page,"Step 1: Entered valid username and password"
+        );
+
+        adminPageTest.clickLoginButton();  
+         
+        HybridStepLogger.logStepWithScreenshot(
+                page,"Step 2: Clicked login button"
+        );
+
         adminPageTest.clickAdminTab();
         adminPageTest.verifyAdminHeading();
+
+
 
 
     }

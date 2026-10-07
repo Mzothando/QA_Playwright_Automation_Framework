@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Admin Suite Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 05 17:59:41 SAST 2026</td>
+<td>Started on:</td><td>Tue Oct 06 17:48:17 SAST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41059 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8028 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,128 +76,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Admin_Suite_TestRunner.ADM_003_AddUserWithValidInformation()'><b>ADM_003_AddUserWithValidInformation</b><br>Test class: tests.Admin_Suite_TestRunner<br>Test method: ADM-003 — Add user with valid information<br>Parameters: Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
-    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
-    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
-    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
-    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
-    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
-    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
-    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
-    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
-    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
-}
-Call log:
--   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:691)
-	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:658)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:646)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:126)
-	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:563)
-	at com.microsoft.playwright.Locator.selectOption(Locator.java:5114)
-	at pages.admin_suite.ADM_003_AddUserWithValidInformation.clickUserRoleOption(ADM_003_AddUserWithValidInformation.java:102)
-	at tests.Admin_Suite_TestRunner.ADM_003_AddUserWithValidInformation(Admin_Suite_TestRunner.java:173)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
-    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
-    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
-    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
-    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
-    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
-    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
-    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
-    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
-    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
-}
-Call log:
--   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
-	... 42 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1232703108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1232703108'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
-    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
-    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
-    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
-    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
-    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
-    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
-    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
-    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
-    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
-}
-Call log:
--   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:691)
-	at com.microsoft.playwright.impl.FrameImpl.selectOptionImpl(FrameImpl.java:658)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:646)
-	at com.microsoft.playwright.impl.FrameImpl.selectOption(FrameImpl.java:126)
-	at com.microsoft.playwright.impl.LocatorImpl.selectOption(LocatorImpl.java:563)
-	at com.microsoft.playwright.Locator.selectOption(Locator.java:5114)
-	at pages.admin_suite.ADM_003_AddUserWithValidInformation.clickUserRoleOption(ADM_003_AddUserWithValidInformation.java:102)
-	at tests.Admin_Suite_TestRunner.ADM_003_AddUserWithValidInformation(Admin_Suite_TestRunner.java:173)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+<td title='tests.Admin_Suite_TestRunner.setUp()'><b>setUp</b><br>Test class: tests.Admin_Suite_TestRunner</td>
+<td><div><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177072083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177072083'><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -217,42 +119,12 @@ Call log:
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;) resolved to 3 elements:
-    1) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;-- Select --&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;-- Select --&quot;))
-    2) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Admin&quot;))
-    3) &lt;div role=&quot;option&quot; data-v-d130bb63=&quot;&quot; data-v-13cf171c=&quot;&quot; class=&quot;oxd-select-option&quot;&gt;…&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;ESS&quot;))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:35397:17)
-    at async LongStandingScope._race (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:3226:18)
-    at async evaluateExpression (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:19157:12)
-    at async FrameSelectors.callOnSelectorHandle (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:20497:25)
-    at async C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23497:28
-    at async _Frame.retryWithProgressAndTimeouts (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23468:29)
-    at async _Frame.retryWithProgressAndBackoff (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23452:16)
-    at async _Frame.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:23703:16)
-    at async _FrameDispatcher.selectOption (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:54503:26)
-    at async _ProgressController.run (C:\Users\User\AppData\Local\Temp\playwright-java-16262386741414451801\package\lib\coreBundle.js:12149:27)
-}
-Call log:
--   - waiting for locator(&quot;//div[@role=&apos;listbox&apos;]//div[@role=&apos;option&apos;]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:277)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
-	... 42 more
 </pre></div></td>
-<td>5</td>
-<td>tests.Admin_Suite_TestRunner@563f38c4</td></tr>
+<td>6</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -260,15 +132,180 @@ Call log:
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Admin_Suite_TestRunner.ADM_002_verifyUserManagementPageLoads()'><b>ADM_002_verifyUserManagementPageLoads</b><br>Test class: tests.Admin_Suite_TestRunner<br>Test method: ADM-002 — Verify User Management page loads<br>Parameters: Admin, admin123</td>
+<td title='tests.Admin_Suite_TestRunner.tearDown()'><b>tearDown</b><br>Test class: tests.Admin_Suite_TestRunner</td>
 <td></td>
-<td>4</td>
-<td>tests.Admin_Suite_TestRunner@563f38c4</td></tr>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
 <tr>
-<td title='tests.Admin_Suite_TestRunner.ADM_001_VerifyAdminPageIsAccessible()'><b>ADM_001_VerifyAdminPageIsAccessible</b><br>Test class: tests.Admin_Suite_TestRunner<br>Test method: ADM-001 — Verify Admin page is accessible<br>Parameters: Admin, admin123</td>
+<td title='tests.Admin_Suite_TestRunner.tearDown()'><b>tearDown</b><br>Test class: tests.Admin_Suite_TestRunner</td>
 <td></td>
-<td>3</td>
-<td>tests.Admin_Suite_TestRunner@563f38c4</td></tr>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
+<tr>
+<td title='tests.Admin_Suite_TestRunner.setUp()'><b>setUp</b><br>Test class: tests.Admin_Suite_TestRunner</td>
+<td></td>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
+<tr>
+<td title='tests.Admin_Suite_TestRunner.tearDown()'><b>tearDown</b><br>Test class: tests.Admin_Suite_TestRunner</td>
+<td></td>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
+<tr>
+<td title='tests.Admin_Suite_TestRunner.setUp()'><b>setUp</b><br>Test class: tests.Admin_Suite_TestRunner</td>
+<td></td>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.Admin_Suite_TestRunner.ADM_003_AddUserWithValidInformation()'><b>ADM_003_AddUserWithValidInformation</b><br>Test class: tests.Admin_Suite_TestRunner<br>Test method: ADM-003 â€” Add user with valid information<br>Parameters: Admin, admin123, Admin, Pe, Enabled, automation@123, abc@123, abc@123</td>
+<td><div><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1765690649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765690649'><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
+<tr>
+<td title='tests.Admin_Suite_TestRunner.ADM_002_verifyUserManagementPageLoads()'><b>ADM_002_verifyUserManagementPageLoads</b><br>Test class: tests.Admin_Suite_TestRunner<br>Test method: ADM-002 â€” Verify User Management page loads<br>Parameters: Admin, admin123</td>
+<td><div><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538849250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538849250'><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
+<tr>
+<td title='tests.Admin_Suite_TestRunner.ADM_001_VerifyAdminPageIsAccessible()'><b>ADM_001_VerifyAdminPageIsAccessible</b><br>Test class: tests.Admin_Suite_TestRunner<br>Test method: ADM-001 â€” Verify Admin page is accessible<br>Parameters: Admin, admin123</td>
+<td><div><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1105282397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1105282397'><pre>java.lang.IllegalArgumentException: Unsupported browser: edge
+	at base.BrowserFactory.createBrowser(BrowserFactory.java:37)
+	at base.BaseTest.setUp(BaseTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>tests.Admin_Suite_TestRunner@22ef9844</td></tr>
 </table><p>
 </body>
 </html>

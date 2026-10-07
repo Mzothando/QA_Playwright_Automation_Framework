@@ -2,8 +2,10 @@ package base;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.LoadState;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
 import utils.ConfigReader;
 
 public class BaseTest {
@@ -13,42 +15,146 @@ public class BaseTest {
     protected BrowserContext context;
     protected Page page;
 
+    /*
+     * Stores the Playwright Page for the
+     * current TestNG thread.
+     *
+     * This allows utilities/listeners to access
+     * the current page safely.
+     */
+    private static final ThreadLocal<Page> PAGE =
+            new ThreadLocal<>();
+
+
     @BeforeMethod
     public void setUp() {
 
-        // Get browser from Maven command
-        // Default = chrome
+        /*
+         * =========================================
+         * GET BROWSER
+         * =========================================
+         *
+         * Browser can be supplied through Maven:
+         *
+         * mvn test -Dbrowser=chrome
+         *
+         * Default = chrome
+         */
+
         String browserName =
-                System.getProperty("browser", "chrome");
+                System.getProperty(
+                        "browser",
+                        "chrome"
+                );
 
-        // Start Playwright
-        playwright = Playwright.create();
 
-        // Create browser
-        browser = BrowserFactory.createBrowser(
-                playwright,
-                browserName
+        /*
+         * =========================================
+         * START PLAYWRIGHT
+         * =========================================
+         */
+
+        playwright =
+                Playwright.create();
+
+
+        /*
+         * =========================================
+         * CREATE BROWSER
+         * =========================================
+         */
+
+        browser =
+                BrowserFactory.createBrowser(
+                        playwright,
+                        browserName
+                );
+
+
+        /*
+         * =========================================
+         * CREATE BROWSER CONTEXT
+         * =========================================
+         */
+
+        context =
+                browser.newContext();
+
+
+        /*
+         * =========================================
+         * CREATE PAGE
+         * =========================================
+         */
+
+        page =
+                context.newPage();
+
+
+        /*
+         * Store Page in ThreadLocal.
+         *
+         * This is used by:
+         *
+         * TestNGListener
+         * HybridStepLogger
+         * Other utilities
+         */
+
+        PAGE.set(page);
+
+
+        /*
+         * =========================================
+         * DEFAULT TIMEOUT
+         * =========================================
+         */
+
+        page.setDefaultTimeout(
+                30000
         );
 
-        // Create browser context
-        context = browser.newContext();
 
-        // Create page
-        page = context.newPage();
+        /*
+         * =========================================
+         * NAVIGATION TIMEOUT
+         * =========================================
+         */
 
-        // Set default timeout to 30 seconds
-        page.setDefaultTimeout(30000);
+        page.setDefaultNavigationTimeout(
+                30000
+        );
 
-        // Set navigation timeout to 30 seconds
-        page.setDefaultNavigationTimeout(30000);
 
-        // Get URL from config.properties
-        String url = ConfigReader.getConfig("orangeHrm");
+        /*
+         * =========================================
+         * GET APPLICATION URL
+         * =========================================
+         */
 
-        // Navigate to application
-        page.navigate(url);
+        String url =
+                ConfigReader.getConfig(
+                        "orangeHrm"
+                );
 
-        // Wait until the page reaches network idle
+
+        /*
+         * =========================================
+         * NAVIGATE TO APPLICATION
+         * =========================================
+         */
+
+        page.navigate(
+                url
+        );
+
+
+        /*
+         * =========================================
+         * WAIT FOR PAGE TO LOAD
+         * =========================================
+         */
+
         page.waitForLoadState(
                 LoadState.NETWORKIDLE,
                 new Page.WaitForLoadStateOptions()
@@ -56,23 +162,106 @@ public class BaseTest {
         );
     }
 
+
     @AfterMethod
     public void tearDown() {
 
-        if (page != null) {
-            page.close();
-        }
+        try {
 
-        if (context != null) {
-            context.close();
-        }
+            /*
+             * =========================================
+             * CLOSE PAGE
+             * =========================================
+             */
 
-        if (browser != null) {
-            browser.close();
-        }
+            if (page != null) {
 
-        if (playwright != null) {
-            playwright.close();
+                page.close();
+            }
+
+
+            /*
+             * =========================================
+             * CLOSE CONTEXT
+             * =========================================
+             */
+
+            if (context != null) {
+
+                context.close();
+            }
+
+
+            /*
+             * =========================================
+             * CLOSE BROWSER
+             * =========================================
+             */
+
+            if (browser != null) {
+
+                browser.close();
+            }
+
+
+            /*
+             * =========================================
+             * CLOSE PLAYWRIGHT
+             * =========================================
+             */
+
+            if (playwright != null) {
+
+                playwright.close();
+            }
+
+        } finally {
+
+            /*
+             * =========================================
+             * REMOVE PAGE FROM THREADLOCAL
+             * =========================================
+             *
+             * Prevents ThreadLocal memory leaks.
+             */
+
+            PAGE.remove();
         }
+    }
+
+
+    /*
+     * =========================================
+     * GET CURRENT PAGE
+     * =========================================
+     */
+
+    public static Page getPage() {
+
+        return PAGE.get();
+    }
+
+
+    /*
+     * =========================================
+     * CHECK IF PAGE EXISTS
+     * =========================================
+     */
+
+    public static boolean hasPage() {
+
+        return PAGE.get() != null;
+    }
+
+
+    /*
+     * =========================================
+     * REMOVE CURRENT PAGE
+     * =========================================
+     */
+
+    public static void removePage() {
+
+        PAGE.remove();
     }
 }
